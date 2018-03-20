@@ -58,4 +58,29 @@ Defining a Thread
 2. By implementing Runnable Interface
 
 1. By extending Thread Class
+Case1. Thread Scheduler - Scheduling Thread
+It is the part of JVM .
+It is responsible to schedule threads, i.e. if multiple threads are waiting to get a chance of execution then in which order threads will be executed is decided by Thread Scheduler.
+We can't expect exact algorithm for Thread Scheduler, it is varied from JVM to JVM. Hence we can't expect thread execution order and exact output.
+Hence whenever situation comes to multi-threading there is no guarantee for exact output but we can provide several possible outputs.
+
+
+Case2. Difference between t.start() and t.run()
+In the case of t.start() a new thread will be created which is responsible for the execution of run().
+But in the case of t.run() a new thread won't be created and run() will be executed just like a normal method call by main thread.
+Hence in the above program if we replace t.start() with t.run() then the output is Child Thread execution followed by Main Thread, this total output produced by only main thread.
+
+
+Case3. Importance of Thread Class start()
+Thread class start() is register the thread with thread-scheduler and all other mandatory activities hence without thread class start() there is no chance of starting a new thread in java. Due to this thread class start() is considered as heart of multi-threading.
+
+start(){
+1. register this thread with thread-scheduler
+2. perform all other mandatory activities
+3. invoke run();
+}
+
+
+case4. Overloading of run()
+Overloading of run() is always possible but thread class start() can invoke no-argument run(), the other overloaded method we have to call explicitly like a normal method call.
 

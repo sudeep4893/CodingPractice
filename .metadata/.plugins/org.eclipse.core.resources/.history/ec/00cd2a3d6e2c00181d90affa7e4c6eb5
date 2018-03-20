@@ -10,25 +10,12 @@ class MyThread extends Thread{
 	}
 }
 
-class MyThread1 extends Thread{
-	
-	public void run() {
-			System.out.println("no - arg run");
-	}
-	
-	public void run(int i) {
-			System.out.println(" int - arg run");
-	}
-	
-}
-
 public class ThreadDemo {
 
 	public static void main(String[] args) {
 
 		System.out.println("Thread Demo");
-		//MyThread t = new MyThread(); //Thread initialization
-		MyThread1 t = new MyThread1();
+		MyThread t = new MyThread(); //Thread initialization
 		t.start();
 		for(int i=0 ; i<10 ; i++){
 			//executed by main thread
