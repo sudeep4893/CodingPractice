@@ -42,4 +42,15 @@ Thread based multi tasking
 
 Whether it is Process based or Thread based the main objective of multi tasking is to reduce response time of the system and to improve performance.
 
+The main important application areas of multi threading are:
+- to develop multi media graphics 
+- to develop animation 
+- to develop video games
+- to develop web servers and application servers etc.
+
+When compared with old languages developing multi threaded applications in java is very easy because java provides inbuilt support with rich API(Thread, Runnable, Thread group etc.)
+
+
+
+
 
