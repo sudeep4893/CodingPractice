@@ -40,3 +40,6 @@ Thread based multi tasking
 - Executing several task simultaneously where each task is a separate independent part of the same program is called Thread based multi tasking and each independent part is called a Thread.
 - Thread based multi tasking is best suitable at Programmatic level.
 
+Whether it is Process based or Thread based the main objective of multi tasking is to reduce response time of the system and to improve performance.
+
+
