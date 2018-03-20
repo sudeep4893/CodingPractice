@@ -1,3 +1,42 @@
 Multi Threading concepts.
 *************************
 
+1. Introduction
+2. The ways to define a Thread
+- By extending Thread class
+- By implementing Runnable(I)
+
+3. Getting and Setting name of thread
+4. Thread Priorities
+5. The methods to prevent thread execution
+- Yield()
+- Join()
+- Sleep()
+
+6. Synchronization
+7. Inter thread communication
+8. Deadlock
+9. Daemon Threads
+10. Multi threading enhancements
+
+________________________________________________________
+
+1. Introduction
+
+Multi Tasking
+- Executing several task simultaneously is a concept of Multi Tasking.
+
+There are two types of multi tasking
+1. Process based multi tasking
+2. Thread based multi tasking
+
+Process based multi tasking
+- Executing several task simultaneously were each task is a separate independent program(process) is called Process based multi tasking.
+e.g. While typing a java program in the editor we can listen audio songs from same system, at the same time we can download a file from internet all these tasks will be executed simultaneously and independent of each other. Hence it is process based multi tasking.
+- Process based multi tasking is best suitable at OS(operating system) level.
+
+
+Thread based multi tasking
+- Executing several task simultaneously where each task is a separate independent part of the same program is called Thread based multi tasking and each independent part is called a Thread.
+- Thread based multi tasking is best suitable at Programmatic level.
+
