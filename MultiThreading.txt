@@ -50,7 +50,12 @@ The main important application areas of multi threading are:
 
 When compared with old languages developing multi threaded applications in java is very easy because java provides inbuilt support with rich API(Thread, Runnable, Thread group etc.)
 
+________________________________________________________
 
+Defining a Thread
+- We can define a Thread in two ways: 
+1. By extending Thread Class
+2. By implementing Runnable Interface
 
-
+1. By extending Thread Class
 

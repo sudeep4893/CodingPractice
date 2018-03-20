@@ -1,0 +1,17 @@
+package com.psl;
+
+class MyThread extends Thread{
+	
+}
+
+public class ThreadDemo {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
