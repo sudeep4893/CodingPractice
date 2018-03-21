@@ -81,6 +81,109 @@ start(){
 }
 
 
-case4. Overloading of run()
+Case4. Overloading of run()
 Overloading of run() is always possible but thread class start() can invoke no-argument run(), the other overloaded method we have to call explicitly like a normal method call.
 
+
+Case5. If we are not Overriding run()
+If we are not Overriding run() then thread class run() will be executed which has empty implementation hence we won't get any output.
+
+class MyThread extends Thread{
+// run() not overridden
+}
+
+public class ThreadDemo {
+	public static void main(String[] args) {
+		MyThread t = new MyThread();
+		t.start();
+	}
+}
+
+O/P -  no output
+It is highly recommended to override run() otherwise don't go for multi-threading concept.
+
+Case6. Overriding of start()
+If we Override start() then our start() will be executed just like a normal method call and new thread won't be created.
+
+class MyThread extends Thread{
+	public void start() {
+			System.out.println("start method");
+	}
+	public void run() {
+			System.out.println("run method");
+	}
+}
+
+public class ThreadDemo {
+	public static void main(String[] args) {
+		MyThread t = new MyThread();
+		t.start();
+		System.out.println("main method");
+	}
+}
+
+O/P - start method
+      main method
+	  
+	  
+Note: It is not recommended to override start() otherwise don't go for multi-threading concept.
+
+
+
+Case7. Overriding of start() with super.start();
+
+class MyThread extends Thread{
+	public void start() {
+			super.start();//create child thread as well
+			System.out.println("start method");
+	}
+	public void run() {
+			System.out.println("run method");
+	}
+}
+
+public class ThreadDemo {
+	public static void main(String[] args) {
+		MyThread t = new MyThread();
+		t.start();
+		System.out.println("main method");
+	}
+}
+possible outputs
+O/P - run method
+	  start method
+      main method
+	  
+O/P - start method
+      run method
+      main method
+	  
+O/P - start method
+      main method
+	  run method
+	  
+	  
+Case8. Thread Lifecycle
+* Born/Ready	MyThread t = new MyThread();
+t.start();
+* Ready/Runnable
+If Thread-scheduler allocates processes
+* Running
+If run() completes
+* Dead
+
+
+Case9. After starting a thread if we are trying to restart the same thread then we will get runtime exception saying Illegal ThreadState Exception.
+
+ublic class ThreadDemo {
+	public static void main(String[] args) {
+		MyThread t = new MyThread();
+		t.start();
+		System.out.println("main method");
+		t.start(); //runtime exception saying Illegal ThreadState Exception.
+	}
+}
+
+
+
+2. By implementing Runnable Interface
