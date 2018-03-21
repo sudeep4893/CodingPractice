@@ -191,3 +191,46 @@ We can define a thread by implementing Runnable interface.
 Runnable interface present in java.lang package and it contains only run(). [public void run();]
 We will get mixed output and we can't tell exact output.
 
+class MyRunnable implements Runnable{
+	public void run() {
+			//executed by child thread
+			System.out.println("Child Thread");
+	}
+}
+
+public class ThreadDemoRunnable {
+	public static void main(String[] args) {
+		MyRunnable r = new MyRunnable();
+		Thread t1 = new Thread();
+		Thread t2 = new Thread(r); //targeted thread
+		***(Different Cases)***
+		System.out.println("main thread"); //executed by main thread	
+	}
+}
+
+********************************
+MyRunnable r = new MyRunnable();
+Thread t1 = new Thread();
+Thread t2 = new Thread(r);
+********************************
+
+Case1. t1.start();
+A new thread will be created and which is responsible for the execution of thread class run(), which has empty implementation.
+
+Case2. t1.run();
+No new thread will be created and thread class run() will be executed just like a normal method call.
+
+Case3. t2.start();
+A new thread will be created and which is responsible for the execution of MyRunnable class run().
+
+Case4. t2.run();
+A new thread won't be created and MyRunnable run() will be executed just like a normal method call.
+
+Case5. r.start();
+We will get compile time error saying MyRunnable class doesn't have start capability.
+Cannot find symbol method start() location class MyRunnable.
+
+Case6. r.run();
+No new thread will be created and MyRunnable run() will be executed like normal method call.
+
+*********************************************************************************************************************************
