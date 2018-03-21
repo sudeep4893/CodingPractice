@@ -1,0 +1,20 @@
+package com.psl;
+
+class MyRunnable implements Runnable{
+	
+	public void run() {
+			//executed by child thread
+			System.out.println("Child Thread");
+	}
+	
+}
+
+public class ThreadDemoRunnable {
+
+	public static void main(String[] args) {
+
+		System.out.println("Runnable interface demo");
+		
+	}
+
+}

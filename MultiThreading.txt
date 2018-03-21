@@ -187,3 +187,5 @@ ublic class ThreadDemo {
 
 
 2. By implementing Runnable Interface
+We can define a thread by implementing Runnable interface.
+Runnable interface present in java.lang package and it contains only run(). [public void run();]
