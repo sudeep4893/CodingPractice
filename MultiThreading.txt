@@ -234,3 +234,46 @@ Case6. r.run();
 No new thread will be created and MyRunnable run() will be executed like normal method call.
 
 *********************************************************************************************************************************
+
+Which approach is best to define a thread?
+- Among two ways of defining a thread implements runnable approach is recommended. 
+  In the first approach our class always extends thread class, there is no chance of extending any other class hence we are missing inheritance benefit. But in the second approach while implementing runnable interface we can extend any other class. Hence we won't miss any inheritance benefit.
+  Because of above reason implementing runnable interface approach is recommended than extending thread class.
+
+  
+Thread class constructors
+1. Thread t = new Thread();
+2. Thread t = new Thread(Runnable r);
+3. Thread t = new Thread(String name);
+4. Thread t = new Thread(Runnable r, String name);
+5. Thread t = new Thread(ThreadGroup g, String name);
+6. Thread t = new Thread(ThreadGroup g, Runnable r);
+7. Thread t = new Thread(ThreadGroup g, Runnable r, String name);
+8. Thread t = new Thread(ThreadGroup g, Runnable r, String name, long stacksize);
+
+
+
+** Durgas approach to define a thread(Not recommended to use)
+class MyThread extends Thread{
+	public void run() {
+			System.out.println("child thread");
+	}
+}
+
+public class ThreadDemo {
+	public static void main(String[] args) {
+		MyThread t = new MyThread();
+		Thread t1 = new Thread(t)
+		t1.start();
+		System.out.println("main thread");
+	}
+}
+
+O/P - Child Thread
+	  Main Thread
+	  
+	  OR
+	  
+	  Main Thread
+	  Child Thread
+	  
