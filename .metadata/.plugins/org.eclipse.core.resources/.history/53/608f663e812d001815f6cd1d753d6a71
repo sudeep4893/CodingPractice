@@ -40,14 +40,10 @@ public class ThreadDemo {
 		System.out.println("====================");
 
 		System.out.println(Thread.currentThread().getName());
-		
 		System.out.println(t.getName());
 		
-		Thread.currentThread().setName("Sudeep");
-		System.out.println(Thread.currentThread().getName());
-		
 		System.out.println("====================");
-				
+		
 	}
 
 }

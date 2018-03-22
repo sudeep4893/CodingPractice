@@ -30,24 +30,11 @@ public class ThreadDemo {
 		//MyThread t = new MyThread(); //Thread initialization
 		MyThread1 t = new MyThread1();
 		t.start();
-		
-		
 		for(int i=0 ; i<10 ; i++){
 			//executed by main thread
 			System.out.println("Main Thread");
 		}
 		
-		System.out.println("====================");
-
-		System.out.println(Thread.currentThread().getName());
-		
-		System.out.println(t.getName());
-		
-		Thread.currentThread().setName("Sudeep");
-		System.out.println(Thread.currentThread().getName());
-		
-		System.out.println("====================");
-				
 	}
 
 }
