@@ -313,3 +313,57 @@ Thread.NORM_PRIORITY() -- 5
 Thread-scheduler will use priorities while allocating processor.
 The Thread which is having highest priority will get chance first.
 If two thread having same priority then we can't expect exact execution order, it depends on Thread-scheduler.
+
+Thread class define the following method to Get and Set priority of a thread.
+public final int getPriority()
+public final void setPriority(int p)
+
+Allowed values range 1 to 10, otherwise run time exception IllegalArgument Exception.
+
+eg. t.setPriority(7); --valid
+    t.setPriority(17); --IllegalArgument Exception
+	
+	
+* Default priority
+The default priority only for the main thread is 5, but for all remaining thread default priority will be inherited from parent to child. i.e what ever parent thread has the same priority will be there for the child thread.
+
+public class Test {
+	public static void main(String[] args) {
+		System.out.println(Thread.currentThread().getPriority());
+		Thread.currentThread().setPriority(7);
+		Thread t = new Thread();
+		System.out.println(t.getPriority());
+	}
+}
+
+O/P - 5
+      7
+	  
+I we are commenting line 1, then both main and child threads have the same priority 5. hence we can't expect execution order and exact output.
+If we are not commenting line 1, then main thread has a priority and child thread has a priority 10, hence child thread will get chance first followed by main thread. In this case output is.
+Child thread 10 times followed by main thread 10 times.
+
+Some platform won't provide proper support for thread priorities.
+
+class MyThread extends Thread{
+	public void run() {
+		for(int i=0 ; i<10 ; i++){
+			//executed by child thread
+			System.out.println("Child Thread");
+		}
+	}
+}
+
+public class Test {
+	public static void main(String[] args) {
+    	MyThread t = new MyThread();
+		System.out.println(Thread.currentThread().getPriority());
+		Thread.currentThread().setPriority(1);
+		t.start();
+		for(int i = 0 ; i<10 ; i++){
+			System.out.println("Main Thread");
+		}
+	}
+}
+
+
