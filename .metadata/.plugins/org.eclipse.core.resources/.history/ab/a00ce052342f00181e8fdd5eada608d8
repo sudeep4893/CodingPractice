@@ -1,0 +1,28 @@
+package com.psl;
+
+public class Client {
+	public static int getIsometricValue(int n, int m) {
+
+		/*
+		 * Write your code here Do not write System.out.println here or any
+		 * other printing statements Your code may get 0 marks if you do not
+		 * follow above instruction.
+		 */
+
+		return 0;
+	}
+
+	public static void main(String[] args) {
+
+		/*
+		 * You can use Console input as well with the help of Scanner or
+		 * BufferedReader classes. Please provide input data in Input box on
+		 * right side of window.
+		 */
+		int n = 8, m = 12;
+
+		System.out.println(getIsometricValue(n, m));
+
+	}
+
+}

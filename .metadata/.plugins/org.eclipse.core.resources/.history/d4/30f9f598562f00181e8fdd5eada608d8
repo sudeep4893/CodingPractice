@@ -1,0 +1,70 @@
+package com.psl;
+
+public class Test {
+
+	public static int addSplitedNumber(int n) {
+
+		int ress, addSqrs = 0;
+
+		while (n > 0) {
+			ress = n % 10;
+			n = n / 10;
+			addSqrs = addSqrs + ress;
+
+		}
+		return addSqrs;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int n = 29, res, res1, numSqr = 0;
+
+		int sqr, addSqr = 0, addnumSqr = 0;
+
+		int maxNum = 0;
+		// case1 - square the number > split that number > add that splitted
+		// number
+		System.out.println("Case-1");
+		sqr = n * n;
+
+		addSqr = Test.addSplitedNumber(sqr);
+//		while (sqr > 0) {
+//			res = sqr % 10;
+//			sqr = sqr / 10;
+//			addSqr = addSqr + res;
+//
+//		}
+		System.out.println(" Remainder - " + addSqr);
+
+		// case2 - split that number > square the splitted number > add that
+		// number
+		System.out.println("******************************************");
+		System.out.println("Case - 2");
+		while (n > 0) {
+			res = n % 10;
+			n = n / 10;
+
+			numSqr = numSqr + (res * res);
+		}
+
+		while (numSqr > 0) {
+			res1 = numSqr % 10;
+			numSqr = numSqr / 10;
+			addnumSqr = addnumSqr + res1;
+		}
+		System.out.println("add Case2 - " + addnumSqr);
+
+		// Find MAX number between two
+		if (addSqr != addnumSqr) {
+			maxNum = 0;
+		} else if (addSqr > addnumSqr) {
+			maxNum = addSqr;
+		} else {
+			maxNum = addnumSqr;
+		}
+
+		System.out.println("Max iso number is - " + maxNum);
+	}
+
+}

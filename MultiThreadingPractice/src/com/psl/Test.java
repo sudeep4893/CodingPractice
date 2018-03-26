@@ -6,7 +6,7 @@ public class Test {
 
 		MyThread t = new MyThread();
 		System.out.println(Thread.currentThread().getPriority());
-		Thread.currentThread().setPriority(1);
+		//Thread.currentThread().setPriority(10);
 		t.start();
 		for(int i = 0 ; i<10 ; i++){
 			System.out.println("Main Thread");

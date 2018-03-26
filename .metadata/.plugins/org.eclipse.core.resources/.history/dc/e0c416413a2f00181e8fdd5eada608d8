@@ -1,0 +1,30 @@
+package com.psl;
+
+public class Test {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int n = 29, res;
+
+		int sqr;
+		// case1 - square the number > split that number > add that splitted number
+		
+		sqr = n * n;
+		
+		while (sqr > 0) {
+			res = sqr % 10;
+			sqr = sqr / 10;
+			System.out.println(" Remainder - " + res);
+		}
+		
+		
+		
+		// case2 - split that number > square the splitted number >  add that number
+
+	}
+
+}

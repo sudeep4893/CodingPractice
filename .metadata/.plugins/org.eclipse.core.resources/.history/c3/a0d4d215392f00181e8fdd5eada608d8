@@ -1,0 +1,29 @@
+package com.psl;
+
+public class Test {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		
+		int res;
+		
+		for(int n = 8; n<= 15 ; n++){
+		
+			while (n>0) {
+				res = n%10;
+				n = n/10;
+				System.out.println(" Remainder - " + res);
+			}
+			
+		}
+		
+		
+		
+	}
+
+}
