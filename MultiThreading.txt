@@ -375,4 +375,42 @@ We can prevent a thread execution by using the following methods.
 1. yield()
 - Yield() causes to pause current executing thread to give the chance for waiting threads of same priority.
 If there is no waiting thread or all waiting threads have low priority then same thread can continue its execution.
+If multiple threads are waiting with same priority then which waiting thread will get the chance? We can't expect it depends on thread-scheduler.
+The thread which is Yielded when it will get the chance once again? It depends on thread-scheduler and we can't expect exactly.
 
+public static native void yield();
+
+
+
+class MyThreadYield extends Thread{
+	
+	public void run(){
+		for(int i=0 ; i<10 ; i++){
+			System.out.println("Child Thread");
+			Thread.yield(); //Line 1
+		}
+	}
+	
+}
+
+public class ThreadDemoYield {
+
+	public static void main(String[] args) {
+
+		MyThreadYield t = new MyThreadYield();
+		t.start();
+		for(int i=0 ; i<10 ; i++){
+			System.out.println("Main Thread");
+		}
+		
+	}
+
+}
+
+- In the above program if we comment Line 1 then both threads will get executed simultaneously and we can't expect which thread will complete first.
+- If we are not commenting Line 1 then child thread always call yield() because of that main thread will get chance more number of times and the chance of completing main thread first is high.
+Note - Some platforms won't provide proper support for yield().
+
+
+2. join()
+- 

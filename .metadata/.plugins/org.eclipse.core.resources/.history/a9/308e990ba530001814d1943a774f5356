@@ -1,0 +1,15 @@
+package com.psl;
+
+class MyThreadYield extends Thread{
+	
+}
+
+public class ThreadDemoYield {
+
+	public static void main(String[] args) {
+
+		
+		
+	}
+
+}
