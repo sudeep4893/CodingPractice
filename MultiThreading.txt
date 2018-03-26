@@ -373,4 +373,6 @@ We can prevent a thread execution by using the following methods.
 3. sleep()
 
 1. yield()
-- 
+- Yield() causes to pause current executing thread to give the chance for waiting threads of same priority.
+If there is no waiting thread or all waiting threads have low priority then same thread can continue its execution.
+
