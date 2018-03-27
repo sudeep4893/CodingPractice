@@ -413,4 +413,14 @@ Note - Some platforms won't provide proper support for yield().
 
 
 2. join()
-- 
+- If thread wants to wait until completing some other thread than we should go for join().
+eg. If a thread t1 wants to wait until completing t2 than t1 has to call t2.join().
+    If t1 executes t2.join() than immediately t1 will be entered into waiting state until t2 completes.
+	Once t2 completes then t1 can continue its execution.
+	
+	
+public final void join() throws InterruptedException
+public final void join(long milisec) throws InterruptedException
+public final void join(long milisec, int nanosec) throws InterruptedException
+
+Every join() throws InterruptedException which is checked exception, hence compulsory we should handle this exception either by using try/catch or by throws keyword otherwise we will get compile time error.
