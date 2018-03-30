@@ -1,4 +1,4 @@
-INDEX VERSION 1.126+G:\code\CodingPractice\.metadata\.plugins\org.eclipse.jdt.core
+INDEX VERSION 1.126+G:\Git_Java\CodingPractice\.metadata\.plugins\org.eclipse.jdt.core
 4155206848.index
 1498219845.index
 1828026965.index
