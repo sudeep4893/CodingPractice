@@ -424,3 +424,5 @@ public final void join(long milisec) throws InterruptedException
 public final void join(long milisec, int nanosec) throws InterruptedException
 
 Every join() throws InterruptedException which is checked exception, hence compulsory we should handle this exception either by using try/catch or by throws keyword otherwise we will get compile time error.
+
+Case1 - Waiting of main thread until completing child thread.
