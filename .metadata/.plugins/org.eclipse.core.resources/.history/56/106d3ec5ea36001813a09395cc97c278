@@ -15,7 +15,7 @@ class MyThreadJoin extends Thread {
 	}
 }
 
-public class ThreadDemoJoin {
+public class ThreadDemoJoin1 {
 
 	public static void main(String[] args) throws InterruptedException {
 
