@@ -501,26 +501,29 @@ Comparison table of Yield() Join() and Sleep().
 Property:  - Yield()       - Join()         - Sleep()
 1. Purpose - If a thread wants to pause its execution to give the chance for remaining threads of same priority then we should go for yield().
            - If a thread wants to wait until completing some other thread then we should go for join().
-		   - If a thread don't want to perform any operation for a particular amount of time then we should go for sleep().
+           - If a thread don't want to perform any operation for a particular amount of time then we should go for sleep().
 		   
 2. Is it overloaded - No
                     - Yes
-					- Yes
+                    - Yes
 					
 3. Is it final  - No
                 - Yes
-				- No
+                - No
 				
 4. Is it throws InterruptedException  - No
                                       - Yes
-									  - Yes
+			                          - Yes
 									  
 5. Is it native - Yes
                 - No
-				- sleep(long milisec)  -native
-				  sleep(long milisec, int nanosec)  -non native
+	            - sleep(long milisec)  -native
+                  sleep(long milisec, int nanosec)  -non native
 				  
 6. Is it static - Yes
                 - No
-				- Yes
+                - Yes
+				
+				
+*********************************************************************************************************************************
 				
