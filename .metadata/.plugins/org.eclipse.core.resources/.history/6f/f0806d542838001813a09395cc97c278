@@ -1,0 +1,11 @@
+package com.psl;
+
+public class ThreadDemoSleep {
+
+	public static void main(String[] args) {
+
+		
+		
+	}
+
+}
