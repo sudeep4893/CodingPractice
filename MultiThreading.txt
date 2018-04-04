@@ -426,3 +426,101 @@ public final void join(long milisec, int nanosec) throws InterruptedException
 Every join() throws InterruptedException which is checked exception, hence compulsory we should handle this exception either by using try/catch or by throws keyword otherwise we will get compile time error.
 
 Case1 - Waiting of main thread until completing child thread.
+
+Case2 - Waiting of child thread until completing main thread.
+- In the above example child thread calls join method on main thread object. hence child thread has to wait until completing main thread.
+o/p - main thread .... 10 times followed by child thread .... 10 times.
+
+Case3 - If main thread calls join method on child thread object and child thread join() on main thread object then both thread will wait forever and the program will be stuck (paused), this is deadlock situation.
+
+Case4 - If a thread calls join() on the same thread itself then the program will be stucked, (this is something like deadlock) - in this case thread has to wait infinite amount of time.
+
+public class ThreadDemoJoin1 {
+	public static void main(String[] args) throws InterruptedException {
+		Thread.currentThread().join();
+	}
+}
+
+
+
+3. sleep()
+If a thread don't want to perform any operation for a particular amount of time then we should go for sleep().
+
+public static native void sleep()(long milisec) throws InterruptedException
+public static void sleep(long milisec, int nanosec) throws InterruptedException
+
+Note - Every sleep() throws InterruptedException, which is checked exception. hence whenever we are using sleep() compulsory we should handle InterruptedException either by try/catch or by throws keyword otherwise we will get compile time error.
+
+How a Thread can interrupt another thread?
+- A Thread can interrupt a sleeping thread or waiting thread by using interrupt() of thread class.
+public void interrupt()
+
+If we comment line1 then main thread won't interrupt child thread. In this case child thread will for loop 10 times.
+
+If we are not commenting line1 then main thread interrupts child thread, in this case O/P is.
+O/P
+End of Main Thread
+I am Lazy thread
+I got interrupted .... 
+
+Note : Whenever we are calling interrupt() if the target thread not in sleeping state or waiting state then there is no impact of interrupt call immediately, interrupt call will be waited until target thread entered into sleeping or waiting state.
+
+If the target thread entered into sleeping or waiting state then immediately interrupt call will interrupt the target thread.
+
+If the target thread never entered into sleeping or waiting state in its lifetime there is no impact of interrupt call, this is the only case were interrupt call will be wasted.
+
+class MyThreadSleep extends Thread{
+	public void run(){
+		for(int i=0 ; i<=50 ; i++){
+			System.out.println("I am lazy thread - " + i);
+		}
+		System.out.println("I am entering into Sleeping state ...");
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			System.out.println("I got interrupted .. .. ..");
+		}
+	}
+}
+
+public class ThreadDemoSleep {
+	public static void main(String[] args) {
+		MyThreadSleep t = new MyThreadSleep();
+		t.start();
+		t.interrupt();
+		System.out.println("End of Main thread");	
+	}
+}
+
+In the above example interrupt call waited until child thread completes for loop 5000 times.
+
+
+Comparison table of Yield() Join() and Sleep().
+
+Property:  - Yield()       - Join()         - Sleep()
+1. Purpose - If a thread wants to pause its execution to give the chance for remaining threads of same priority then we should go for yield().
+           - If a thread wants to wait until completing some other thread then we should go for join().
+		   - If a thread don't want to perform any operation for a particular amount of time then we should go for sleep().
+		   
+2. Is it overloaded - No
+                    - Yes
+					- Yes
+					
+3. Is it final  - No
+                - Yes
+				- No
+				
+4. Is it throws InterruptedException  - No
+                                      - Yes
+									  - Yes
+									  
+5. Is it native - Yes
+                - No
+				- sleep(long milisec)  -native
+				  sleep(long milisec, int nanosec)  -non native
+				  
+6. Is it static - Yes
+                - No
+				- Yes
+				
