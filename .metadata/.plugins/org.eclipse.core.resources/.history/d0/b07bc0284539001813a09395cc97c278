@@ -22,7 +22,7 @@ public class Client {
 		int fillLength = fill.length;
 		System.out.println("Fill length - " + fillLength);
 		
-		Client.print(fill, fillLength, 3);
+		Client.print(fill, fillLength, 2);
 		System.out.println("********************");
 		for (int i = 0; i < fill.length; i++) {
 
