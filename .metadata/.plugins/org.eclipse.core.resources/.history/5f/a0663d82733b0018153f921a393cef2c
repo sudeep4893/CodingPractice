@@ -10,10 +10,8 @@ public class Client {
 		 * follow above instruction.
 		 */
 
-		
 		int result = 0;
 
-		try{
 		if(n >= 2 && n <= 1000 && m >= 1 && m <= 1000){
 		
 		for (int i = 0; i < n; i++) {
@@ -51,15 +49,11 @@ public class Client {
 		}else{
 			return 0;
 		}
-		
-		}catch(Exception e){
-			return 0;
-		}
 	}
 
 	public static void main(String[] args) {
 
-		int n = 4000, m = 10;
+		int n = 1000, m = 1000;
 		int fill[] = { 5,4,9,10 };
 		int use[] = { 3,4,8,2};
 

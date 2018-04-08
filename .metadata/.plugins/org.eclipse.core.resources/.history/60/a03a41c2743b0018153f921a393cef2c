@@ -59,7 +59,7 @@ public class Client {
 
 	public static void main(String[] args) {
 
-		int n = 4000, m = 10;
+		int n = 4, m = 10;
 		int fill[] = { 5,4,9,10 };
 		int use[] = { 3,4,8,2};
 
