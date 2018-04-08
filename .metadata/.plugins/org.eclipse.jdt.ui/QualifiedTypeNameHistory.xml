@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.lang.Thread"/>
 <fullyQualifiedTypeName name="com.psl.MyThread"/>
+<fullyQualifiedTypeName name="com.psl.MyThreadJoin1"/>
+<fullyQualifiedTypeName name="com.psl.MyThreadSlide"/>
+<fullyQualifiedTypeName name="java.lang.Thread"/>
+<fullyQualifiedTypeName name="com.psl.MyThreadSleep"/>
+<fullyQualifiedTypeName name="com.psl5418.Client"/>
 </qualifiedTypeNameHistroy>

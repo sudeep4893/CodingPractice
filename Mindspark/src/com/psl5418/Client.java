@@ -5,9 +5,8 @@ public class Client {
 	public static void print(int a[], int n, int ind) {
 
 		for (int i = ind; i < n + ind; i++)
-            System.out.print(a[(i % n)] + " --------- ");
-    
-		
+			System.out.print(a[(i % n)] + " --------- ");
+
 	}
 
 	public static int findStartArea(int n, int m, int[] fill, int[] use) {
@@ -21,27 +20,30 @@ public class Client {
 		int count = 0, sub;
 		int fillLength = fill.length;
 		System.out.println("Fill length - " + fillLength);
-		
+
 		Client.print(fill, fillLength, 3);
 		System.out.println("********************");
+		try{
 		for (int i = 0; i < fill.length; i++) {
 
 			System.out.println("Value of full - " + fill[i]
 					+ " Value of use - " + use[i]);
 			// System.out.println("Max element = " + fill[fillLength]);
-			if (fill[i] > use[i] || fill[i] == use[i]) {
-				// if(fill[i] == fill[1-fill.length]){
-				// System.out.println("Max element = " + fill[fillLength]);
-				// }
+
+			if (fill[i] >= use[i]) {
 				sub = fill[i] - use[i];
-				fill[i + 1] = fill[i + 1] + sub;
 				System.out.println("Subtraction - " + sub);
-			} else {
-				count = count + 1;
+				System.out.println("$$$$");
+				fill[i + 1] = fill[i + 1] + sub;
+				System.out.println("$$$$");
 			}
 
-		}
+			count = count + 1;
 
+		}
+		}catch(Exception e){
+			//System.out.println("Array index exception");
+		}
 		System.out.println("Count - " + count);
 		return 0;
 	}

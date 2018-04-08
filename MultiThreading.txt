@@ -513,7 +513,7 @@ Property:  - Yield()       - Join()         - Sleep()
 				
 4. Is it throws InterruptedException  - No
                                       - Yes
-			                          - Yes
+                                      - Yes
 									  
 5. Is it native - Yes
                 - No
