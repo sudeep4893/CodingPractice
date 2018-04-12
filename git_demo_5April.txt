@@ -1,0 +1,355 @@
+Git - 5th April 208
+
+(VCS - Version Control System)
+
+#1 What is a Version Control System(VCS) ?
+Version control systems are a category of software tools that help a software team manage changes to source code over time. Version control software keeps track of every modification to the code in a special kind of database. If a mistake is made, developers can turn back the clock and compare earlier versions of the code to help fix the mistake while minimizing disruption to all team members.
+
+#2 Introduction to Git
+-Used for source code manangement in software development.
+-Created by Linux Torvalds in 2005.
+-Maintained by Junio Hamano.
+-Stable release	2.16.2 / 15 February 2018.
+-Git is free software under GNU GPL 2.
+-Distributed VCS.
+-Written in C, Shell, Perl, Tcl(tickle), Python.
+-GIT -> Global Information Tracker(not official full form).
+
+========================
+#3 Free Software, GNU
+*** There is a BIG difference between open source software and free software ***
+Richard M. Stallman(RMS) is the pioneer of Free Software Movement / FSF(Free Software Foundation)
+Please visit : https://stallman.org/ to know more about RMS and FSF.
+Essential Conditions for Free Software:
+Freedom 0 : Freedom to RUN it.
+Freedom 1 : Freedom to CHANGE it(study its source code).
+Freedom 2 : Freedom to MODIFY and REDISTRIBUTE it.
+Freedom 3 : REDESTRIBUTE exact copies.
+
+Software can be open source but not necessarily free.
+e.g. https://opensource.microsoft.com/
+For software to be free, it should confirm with 4 conditions for freedom as stated above.
+
+*** Also, refer Linux OSs as GNU/Linux.(Recursive Acronym - GNUs not UNIX)
+GNU system is the brainchild of RMS and Linux is one of its kernels.
+To elaborate Linux(kernel) is a replacable part of GNU system.(can be replaced by other kernels e.g. GNU/HERD)
+https://www.gnu.org/home.en.html
+
+Other notable contributions by GNU we use daily:
+1. GNU C/C++ compilation tools - gcc/g++.
+2. GNU C library.
+3. GNU Desktop Environment - GNOME.
+4. GNU shell ($man bash).
+5. GNU Core Utils (e.g. cat, ls, rm)
+6. GNU Bin Utils (e.g. as, ld, objdump, readelf)
+7. GNU - GPL (GNU Public License) 
+	1. GNU/Linux
+	2. MySQL
+	3. VLC Media Player
+	4. Notepad ++
+	5. many many more...
+
+TAKEAWAYs : RMS, GNU, GPL, free software vs open source software
+========================
+
+#4 Git Alternatives:
+1. Microsoft Team Foundation Server.
+2. Subversion
+3. Helix
+4. Mercurial
+5. IBM Rational ClearCase ***
+6. AccuRev
+7. Surround SCM
+8. CVS
+9. Kiln
+10. Bazaar
+11. IBM Jazz Rational Synergy ***
+12. Fossil
+13. Monotone
+14. Plastic SCM
+15. Serena PVCS Pro
+
+Note : github / gitlab / tortoise git are not VCSs themselves, but wrappers around Git. You could write one too. :)
+Note : Bitbucket is not an alternative, it used mercurial and now Git as a VCS. (basically a wrapper).
+
+#5 Git Basics
+
+#5.1 Installing Git (for Ubunutu / Windows)
+$sudo apt-get install git
+(On Windows we need to install GitBash)
+
+Check installation with : 
+$git --version
+
+#5.2 Set global config values
+$git config --global user.name "<name>"
+$git config --global user.email "<email id>"
+
+List config
+$git config --list
+
+#5.3 Help
+$git help <verb> e.g. $git help config
+$git <verb> --help e.g. $git config --help
+
+#5.4 Start tracking local project
+$mkdir mygitproject
+$cd mygitproject
+$git init
+(notice introduction of .git directory after running command git init)
+
+To stop tracking project
+$rm -rf .git
+
+Contents of directory .git :
+.git $ tree
+.
+├── branches
+├── config
+├── description
+├── HEAD
+├── hooks
+│   ├── applypatch-msg.sample
+│   ├── commit-msg.sample
+│   ├── post-update.sample
+│   ├── pre-applypatch.sample
+│   ├── pre-commit.sample
+│   ├── prepare-commit-msg.sample
+│   ├── pre-push.sample
+│   ├── pre-rebase.sample
+│   └── update.sample
+├── info
+│   └── exclude
+├── objects
+│   ├── info
+│   └── pack
+└── refs
+    ├── heads
+    └── tags
+
+(the details about the contents of this directory are not need, this is just metadata, can be covered as git advanced topic)
+
+#5.5 Adding git ignore file - these dirs / files will not be tracked by git.
+Assume the following structure:
+mygitproject $ tree
+.
+├── build
+├── notes.txt
+└── src
+    └── helloworld.c
+
+Create file .gitignore in same dir where .git is located
+Contents of .gitignore:
+.gitignore
+build/
+notes.txt
+
+#5.6 See status
+$git status
+
+#5.7 View all changes / view changes to a particular file
+$git diff
+$git diff helloworld.c
+
+#5.8 View log
+$git log
+
+#5.9 Git add / commit workflow
+Working Directory	Staging Area	Repository
+	<----------------------------------|
+		checkout the project
+
+	|------------------>
+	   stage fixes(add)
+			   |-------------->
+				commit(commit)
+
+## Work on a particular file say 'helloworld.c'	
+## Adding to staging area
+   $git add <filename>
+   $git add -A (adds everything)
+## Remove files from staging area
+   $git reset <filename>
+   $git reset (remove everything from staging area)
+## Commit Code
+   $git commit -m "Initial Commit"
+Note : Comments for commits should be IMPERATIVE(should sound as an order/ telling someone to do something)
+Good example : Initial Commit		  |	Bad example : Doing initial commit
+Good example : Add feature for data mining| 	Bad example : Added feature for data mining
+Good example : Remove old comments 	  |	Bad example : Removing comments because they were old
+
+##Congo ! You have commited your first change
+git log to see your commit
+Note : You have commited changes to local repo, to commit to remote repo, you need to push your changes
+
+#5.10 Clone a repo.
+$git clone <url> <where to clone>
+
+$5.11 Fetch latest changes
+//later
+
+#5.12 Merge changes
+//later
+
+#5.13 Pull latest changes (pull : fetch and merge) ($git pull --rebase is recommended)
+$git pull
+
+To sum of the basic commit workflow :
+1. git init / clone (one time activity)
+2. git add
+3. git commit
+4. git pull origin master(name of repo, branch) | rebase recommended
+5. git push origin master
+
+#5.14 Adding ssh keys
+Use "Git Bash" or another method to generate an SSH public/private key pair. 
+1.	Open GitBash / terminal and type the command ssh-keygen -t rsa -C "<YOUR IBM EMAIL>" and replace the contents within angle brackets with your IBM email. e.g. ssh-keygen -t rsa -C "pkelkar@us.ibm.com"
+	1.	It will ask for a filename to save the keys under. - select default 
+	2.	It then asks for a passphrase. Leave this empty or you will run into problems. 
+	3.	If it gives you a key fingerprint, success! Your keys should be in the current working directory from where you ran the ssh-keygen command.
+	
+The file with a .pub extension is your public key. The file without an extension is your private key. 
+
+2.	Log in to git@github.ibm.com
+	1.	Navigate to [settings] (upper right icon) then go to [Keys]. 
+	2.	Then click on the Add SSH Key button. 
+	
+3.	Open your public key file created earlier with notepad or another text editor; copy the contents of the file. 
+	1.	Paste the contents into the Add an SSH Key form and create a memorable title. 
+	2.	Click Add key 
+	
+4.	Confirm the key works correctly. 
+	1.	Go back to a console capable of running git. 
+	2.	Run the following command
+	ssh -i <filename> git@github.ibm.com
+		1.	The filename of your private key is the same as your public key without the .pub file extension. 
+		2.	Also, you may need to make sure you run this command in the same directory that contains the generated pair of keys. 
+		3.	To debug the connection, try adding a -v argument to the SSH command. -vv and -vvv increase verbosity of debug statements. 
+	3.	If your SSH connection is set up, the command will output 
+	Welcome to GitLab, <SUBJECT NAME HERE> 
+	Connection to git@github.ibm.com closed.
+	
+5.	Simplify SSH for Windows (this step is optional) 
+	1.	So in the last command we used -i to tell SSH to use a specific key. To avoid this in the future, we will tell SSH what key corresponds to what server. 
+	2.	Navigate to your user directory. Something like C:\Users\<WINDOWS USERNAME> 
+	3.	Open the .ssh folder. Create it if it doesn't exist. 
+	4.	Place the public and private keys generated earlier into this folder, unless they were created there. 
+	5.	Create a new file called 'config' with no file extension. Open it with notepad or a similar text editor. 
+	6.	Put the following text in .ssh/config 
+	Host git@github.ibm.com 
+      HostName git@github.ibm.com 
+      IdentityFile C:/users/<WINDOWS USERNAME>/.ssh/<FILENAME OF PRIVATE KEY>
+	Replacing the contents in angle brackets with the corresponding names. 
+6.	Test it again by running 
+ssh git@github.ibm.com 
+You should get the same results as earlier.
+
+#6 Branching
+
+We dont commit directly to the master branch.
+We create branches for new features, releases, work on them, test on them, then merge them into master for final release.
+
+e.g.
+master
+#include<stdio.h>
+
+//prototype
+int add(int, int);
+
+//main
+int main()
+{
+	int a = 2, b = 3, c;
+	c = add(a,b);
+	return 0;
+}
+
+//definition
+int add(int a, int b)
+{
+	return a+b;
+}
+------------
+develop feature for subtraction - Tom , multiplication - Bill
+int sub(int a, int b)
+{
+	return a - b;
+}
+
+int mul(int a, int b)
+{
+	return a * b;
+}
+
+#6.1 View all branches
+$git branch
+$git branch -a (all / see remote branches)	
+
+#6.2 Create branch
+$git branch <branch_name>
+
+#6.3 Checkout to branch
+$git checkout <branch_name>
+
+#6.4 Develop your feature and commit, test etc...
+(see changes in file between branch changes / commit changes)
+
+#6.5 Merge
+//assume you were developing on add_feature branch
+$ git checkout master (branch you want to merge on)
+$ git pull (this step is CRUCIAL, someone may have commited/merged on to master branch when you were working on a feature)
+$ git branch --merged (list all merged branches)
+$ git merge add_feature (actual merge step) (no need to commit now, you will get commit history from merged branch)
+$ git push origin add_feature (push to remote)
+$ git branch --merged (now you will be able to see merged branch)
+
+#6.6 Delete a branch
+//Now that we have merged changes into master branch we can delete the feature branch
+Local : $ git branch -d add_feature
+Remote : $git push origin --delete add_feature
+
+#6.7 Fork vs branch
+
+Branch : Used to develop new feature in same project. Branches are ALWAYS merged into the master.
+e.g. develop additon feature for calculator
+
+Fork : Used for starting all together new project from existing project. Forks are NEVER merged into master.
+e.g. Jenkins project was forked from Hudson.
+Here Jenkins people were not developing new feature for Hudson project.
+They were creating all together new project. Hudson project is still going on with its own features.
+Jenkins will NEVER merge in Hudson now.
+(refer Jenkins wiki)
+------------------------------------
+NOT COVERED:
+0. More about staging area, reset, checkout
+
+1. Diff. between distributed VCS and centralized VCS.
+-> Git is an example of a DVCS (hence Distributed Version Control System). Rather than have only one single place for the full version history of the software as is common in once-popular version control systems like CVS or Subversion (also known as SVN), in Git, every developer's working copy of the code is also a repository that can contain the full history of all changes.
+
+2. Detailed working of fetch, merge, pull, pull with rebase
+git fetch
+git merge / git merge hash
+git pull vs / git pull --rebase
+
+3. Git stash and recovery working
+git status
+git stash
+git stash list
+<<stack>>
+git stack pop
+git stack apply stash{0}
+(how to resolve merge conflicts ?)
+4. Soft / hard reset a commit
+//bit more advanced & risky
+
+5. Making and applying mail patches
+git format-patch origin master
+git format-patch origin master --stdout >> somepatch.file
+ 
+6. Making a pull request. 
+-> Pull request is to be raised when you are working on new feature and you want it to be reviewed and merged into main/master branch. Can be done from git gui from browser. Just push your branch, and option will be availabled on GUI to raise a pull request, specify reviewer and other options. Generally its job of leads / reviewers to verify and merge branches.
+
+https://github.com/pranavkelkar/gitDemo
+
+Notes:
+The URL you cloned from is referred by git as original.
