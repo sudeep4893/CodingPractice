@@ -13,7 +13,7 @@ public class Client {
 		System.out.println("get Words budy...");
 		int count = 0;
 		boolean word = true;
-		if (a >= 1 && b <= 10000) {
+		if (a >= 1 && b <= 1000) {
 
 			for (int i = 1; i <= a; i++) {
 				if (2 * i > a) {

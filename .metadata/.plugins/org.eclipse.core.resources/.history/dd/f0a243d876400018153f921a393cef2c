@@ -13,23 +13,25 @@ public class Client {
 		System.out.println("get Words budy...");
 		int count = 0;
 		boolean word = true;
-		if (a >= 1 && b <= 10000) {
-
+		if(a>=1 && b<=1000){
+			
 			for (int i = 1; i <= a; i++) {
 				if (2 * i > a) {
 					System.out.println("last value would be - " + i);
 				}
-				if (2 * i <= a) {
+				if(2 * i <= a){
 					System.out.println("Condition 2 would be  - " + i);
 				}
 			}
-
+			
 			return count;
-
-		} else {
+			
+		}else{
 			return 0;
 		}
+		
 
+		
 	}
 
 	public static void main(String[] args) {
