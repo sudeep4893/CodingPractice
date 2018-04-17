@@ -529,3 +529,8 @@ Property:  - Yield()       - Join()         - Sleep()
 				
 * Synchronization
 
+- Synchronization is the modifier only applicable for methods and blocks but not for classes and variables.
+- If multiple threads are trying to operate simultaneously on the same java object then there may be a chance of data inconsistency problem, to overcome this problem we should go for Synchronization keyword.
+- If a method are blocked declared as synchronized then at a time only one thread is allowed to execute that method or block on the given object so that data inconsistency problem will be resolved.
+- The main advantage of synchronized keyword is that we can resolve data inconsistency problem but the main disadvantage is that it increase waiting time of threads and create performance problem, hence if there is no specific requirement then it is not recommended to use synchronized keyword.
+- Internally synchronized concept is 
