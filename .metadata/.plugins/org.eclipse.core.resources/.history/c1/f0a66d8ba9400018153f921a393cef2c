@@ -18,13 +18,9 @@ public class Client {
 			for (int i = 1; i <= a; i++) {
 				if (2 * i > a) {
 					System.out.println("last value would be - " + i);
-					
 				}
 				if (2 * i <= a) {
 					System.out.println("Condition 2 would be  - " + i);
-					if(i >= 2 * i){
-						System.out.println(i);
-					}
 				}
 			}
 

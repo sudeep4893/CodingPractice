@@ -22,9 +22,7 @@ public class Client {
 				}
 				if (2 * i <= a) {
 					System.out.println("Condition 2 would be  - " + i);
-					if(i >= 2 * i){
-						System.out.println(i);
-					}
+					
 				}
 			}
 
