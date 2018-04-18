@@ -540,3 +540,14 @@ Property:  - Yield()       - Join()         - Sleep()
 - While a thread executing synchronized method on the given object the remaining threads are not allowed to execute any synchronized method simultaneously on the same object but remaining threads are allowed to execute non-synchronized method simultaneously.
 - Lock concept is implemented based on object but not based on method.
 
+- Even though with method is synchronized we will get irregular output because threads are operating on different java objects.
+
+Conclusion-
+If multiple threads are operating on same java object then synchronization is required.
+
+If multiple threads are operating on multiple java objects then synchronization is not required.
+
+In java there are two levels of locks available
+1. Object level
+2. Class level 
+
