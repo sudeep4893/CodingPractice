@@ -12,8 +12,8 @@ public class Client {
 
 		if(n>=1 && n <=5000){
 			
-			for(int i=0 ; i<n ; ++i){
-				System.out.println(cards[i]);
+			for(int i=0 ; i<n ; i++){
+				
 			}
 			return 1;
 			

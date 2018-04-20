@@ -10,19 +10,9 @@ public class Client {
 		 * follow above instruction.
 		 */
 
-		if(n>=1 && n <=5000){
-			
-			for(int i=0 ; i<n ; ++i){
-				System.out.println(cards[i]);
-			}
-			return 1;
-			
-		}else{
 		
-			return 0;
-			
-		}
 		
+		return 0;
 	}
 
 	public static void main(String[] args) {
