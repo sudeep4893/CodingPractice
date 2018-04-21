@@ -21,16 +21,13 @@ public class Client {
 				//System.out.println(cards[i]);
 				if(i == 0){
 					grp.add(cards[0]);
-					if(cards[0] == cards[i]){
-						
-					}
 				}
 				
 				
 				
 			}
-			System.out.println("list created " + list);
-			System.out.println("group " + grp);
+			System.out.println(list);
+			System.out.println("group" + grp);
 			return 1;
 			
 		}else{

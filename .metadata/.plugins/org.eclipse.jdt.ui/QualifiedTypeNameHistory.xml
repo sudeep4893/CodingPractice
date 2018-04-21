@@ -6,4 +6,5 @@
 <fullyQualifiedTypeName name="java.lang.Thread"/>
 <fullyQualifiedTypeName name="com.psl.MyThreadSleep"/>
 <fullyQualifiedTypeName name="com.psl5418.Client"/>
+<fullyQualifiedTypeName name="java.lang.Exception"/>
 </qualifiedTypeNameHistroy>
