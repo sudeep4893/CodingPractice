@@ -40,10 +40,10 @@ AWS Storage services
 
 2. Cloudfront - Content delivery network.
 
-3. Elastic block storage - 
+3. Elastic block storage - Block level storage, provides high IOPS.
 
-4. Glacier - 
+4. Glacier - Data archiving service, offering low price storage.
 
-5. Snowball - 
+5. Snowball - Physical transfer of data to AWS infrastructure.
 
-6. Storage gateway - 
+6. Storage gateway - Provides seamless integration between your own premise servers and the AWS infrastructure. 
