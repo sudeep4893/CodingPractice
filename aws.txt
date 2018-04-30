@@ -18,3 +18,11 @@ AWS Compute services
 5. AutoScaling
 
 1. EC2 - Resizeable compute capacity in the cloud, which can be customized according to your need. 
+
+2. Lambda - Execute background task, not for hosting an application.
+
+3. Elastic Beanstalk - Deploy your application without worrying about the underlying hardware. 
+
+4. Elastic load balancer - Distributes the workload on the deployed instances.
+
+5. AutoScaling - Scale up and down automatically.
