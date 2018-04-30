@@ -26,3 +26,12 @@ AWS Compute services
 4. Elastic load balancer - Distributes the workload on the deployed instances.
 
 5. AutoScaling - Scale up and down automatically.
+
+
+AWS Storage services
+1. S3
+2. Cloudfront
+3. Elastic block storage
+4. Glacier
+5. Snowball
+6. Storage gateway
