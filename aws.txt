@@ -35,3 +35,15 @@ AWS Storage services
 4. Glacier
 5. Snowball
 6. Storage gateway
+
+1. S3 - Object oriented file system.
+
+2. Cloudfront - Content delivery network.
+
+3. Elastic block storage - 
+
+4. Glacier - 
+
+5. Snowball - 
+
+6. Storage gateway - 
