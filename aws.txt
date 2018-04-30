@@ -1,2 +1,20 @@
 Amazon Web Services (AWS) is a secured cloud services platform, offering compute power, database storage, content delivery and other functionality to help businesses scale and grow.
 
+Different Domains in AWS
+1. Compute 
+2. Migration
+3. Security and Identity compliance
+4. Storage
+5. Networking and content delivery
+6. Messaging 
+7. Database
+8. Management tools
+
+AWS Compute services
+1. EC2
+2. Lambda
+3. Elastic Beanstalk
+4. Elastic load balancer
+5. AutoScaling
+
+1. EC2 - Resizeable compute capacity in the cloud, which can be customized according to your need. 
