@@ -1,0 +1,2 @@
+Amazon Web Services (AWS) is a secured cloud services platform, offering compute power, database storage, content delivery and other functionality to help businesses scale and grow.
+

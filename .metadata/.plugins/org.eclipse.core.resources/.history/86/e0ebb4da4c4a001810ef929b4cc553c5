@@ -45,7 +45,6 @@ public class Client {
 			long alwaysPossible = 0;
 			System.out.println("case1Start - " + case1Start);
 			long notAlwaysArray[] = new long[case1Start];
-			System.out.println("notAlwaysArray - " + notAlwaysArray);
 			if (i > 0) {
 				k = i - 1;
 				for (t = case1Start; t <= a; ++t) {
