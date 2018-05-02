@@ -535,7 +535,7 @@ Property:  - Yield()       - Join()         - Sleep()
 - The main advantage of synchronized keyword is that we can resolve data inconsistency problem but the main disadvantage is that it increase waiting time of threads and create performance problem, hence if there is no specific requirement then it is not recommended to use synchronized keyword.
 - Internally synchronized concept is implemented by using lock. Every object in java has a unique lock. whenever we are using synchronized keyword then only lock concept is coming into the picture.
 - If a thread wants to execute synchronized method on the given object, first it has to get lock of that object.
-- Once thread get the lock then it is allowed to execute any synchronized method on that object.
+- Once thread got the lock then it is allowed to execute any synchronized method on that object.
 - Once method execution completes automatically thread releases a lock. Acquiring and releasing lock internally takes care by JVM and programmer not responsible for this activity.
 - While a thread executing synchronized method on the given object the remaining threads are not allowed to execute any synchronized method simultaneously on the same object but remaining threads are allowed to execute non-synchronized method simultaneously.
 - Lock concept is implemented based on object but not based on method.
