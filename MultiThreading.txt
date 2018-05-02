@@ -538,6 +538,17 @@ Property:  - Yield()       - Join()         - Sleep()
 - Once thread got the lock then it is allowed to execute any synchronized method on that object.
 - Once method execution completes automatically thread releases a lock. Acquiring and releasing lock internally takes care by JVM and programmer not responsible for this activity.
 - While a thread executing synchronized method on the given object the remaining threads are not allowed to execute any synchronized method simultaneously on the same object but remaining threads are allowed to execute non-synchronized method simultaneously.
+
+class X{
+	Synchronized Area{
+		Whenever we are performing Update operation (add / remove / delete / replace) were state of object is changing.
+	}
+	
+	Non Synchronized Area{
+		Whenever object state won't be changed, Like Read operation.
+	}
+}
+
 - Lock concept is implemented based on object but not based on method.
 
 - Even though with method is synchronized we will get irregular output because threads are operating on different java objects.
