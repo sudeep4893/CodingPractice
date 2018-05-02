@@ -541,11 +541,11 @@ Property:  - Yield()       - Join()         - Sleep()
 
 class X{
 	Synchronized Area{
-		Whenever we are performing Update operation (add / remove / delete / replace) were state of object is changing.
+		Whenever we are performing Update operation (add / remove / delete / replace) where state of object is changing.
 	}
 	
 	Non Synchronized Area{
-		Whenever object state won't be changed, Like Read operation.
+		Wherever object state won't be changed, Like Read operation.
 	}
 }
 
