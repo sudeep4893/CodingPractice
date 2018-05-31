@@ -1,0 +1,18 @@
+package com.psl;
+
+class Display{
+	public void wish(String name){
+		
+	}
+}
+
+
+public class SynchronizedDemo {
+
+	public static void main(String[] args) {
+
+		System.out.println("---- Synchronization Demo ----");
+		
+	}
+
+}

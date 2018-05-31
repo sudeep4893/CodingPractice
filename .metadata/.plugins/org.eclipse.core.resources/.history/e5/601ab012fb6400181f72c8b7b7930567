@@ -1,0 +1,20 @@
+package com.psl;
+
+class Display{
+	public void wish(String name){
+		System.out.println("Good Morning ");
+	}
+}
+
+
+public class SynchronizedDemo {
+
+	public static void main(String[] args) {
+
+		System.out.println("---- Synchronization Demo ----");
+		SynchronizedDemo s = new SynchronizedDemo();
+		Display d = new Display();
+		d.wish("sudeep");
+	}
+
+}
