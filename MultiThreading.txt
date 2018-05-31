@@ -571,3 +571,7 @@ In java there are two levels of locks available
 1. Object level
 2. Class level 
 
+Every class in has a unique lock which is nothing but class level lock.
+If a thread wants to execute a static synchronized method then thread required class level lock.
+Once thread got class level lock then it is allowed to execute any static synchronized method of that class.
+Once method execution completes automatically thread releases the lock.
