@@ -124,3 +124,28 @@ executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.file.save",
 executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110505-0800,"org.eclipse.ui.edit.text.scroll.lineDown",1527789622168
 executed,command,org.eclipse.debug.ui,3.7.101.v20110817_r371,"org.eclipse.debug.ui.commands.RunLast",1527789627273
 deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"",1527789633095
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"",1527789639138
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"",1527789645599
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"",1527789678796
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"",1527789685614
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"",1527789692438
+error,log,,,"Internal Error",1527789695359
+executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.edit.text.contentAssist.proposals",1527789697797
+executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.edit.text.contentAssist.proposals",1527789705107
+executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.file.save",1527789708725
+executed,command,org.eclipse.debug.ui,3.7.101.v20110817_r371,"org.eclipse.debug.ui.commands.RunLast",1527789711066
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"",1527789717445
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"",1527789735091
+error,log,,,"Internal Error",1527789739488
+executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.edit.text.contentAssist.proposals",1527789758174
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"",1527789813980
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"",1527789814196
+executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.file.save",1527789822864
+deactivated,workbench,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"",1527789826064
+activated,workbench,org.eclipse.ui.workbench,3.7.0.I20110519-0100,"",1527790829050
+executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.edit.copy",1527790844343
+executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.edit.copy",1527790844554
+executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.edit.copy",1527790844743
+executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.edit.copy",1527790844943
+executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.edit.copy",1527790845107
+executed,command,org.eclipse.ui,3.7.0.I20110602-0100,"org.eclipse.ui.edit.copy",1527790845284

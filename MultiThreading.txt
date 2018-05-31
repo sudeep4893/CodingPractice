@@ -553,6 +553,15 @@ class X{
 
 - Even though with method is synchronized we will get irregular output because threads are operating on different java objects.
 
+Case Study:
+1. 
+		Display d1 = new Display();
+		Display d2 = new Display();
+		MyThreadSyn t1 = new MyThreadSyn(d1, "Sudeep");
+		MyThreadSyn t2 = new MyThreadSyn(d2, "Sandeep");
+		t1.start();
+		t2.start();
+
 Conclusion-
 If multiple threads are operating on same java object then synchronization is required.
 
