@@ -584,4 +584,35 @@ While a thread executing static synchronized method the remaining threads are no
 
 
 #Synchronized Block.
-- 
+- If very few lines of the code requires synchronization then it is not recommended to declare entire method as synchronized, we have to enclose those few lines of the code by using synchronized block.
+
+- The main advantage of synchronized block over synchronized method is it reduces waiting time of threads and improves performance of the system.
+
+We can declare synchronized block as follows:
+
+1. To get lock of current object.
+
+synchronized(this){
+---
+If a thread get lock at current object then only it is allowed to enter into this area.
+---
+}
+
+2. To get lock of particular object.
+
+synchronized(b){
+---
+If a thread get lock at particular object(b) then only it is allowed to enter into this area.
+---
+}
+
+3. To get class level lock.
+
+synchronized(Display.class){
+---
+If a thread get class level lock of "Display" class then only it is allowed to enter into this area.
+---
+}
+
+Lock concept applicable for object type and class types but not for primitives, Hence we can't pass primitive type as argument to synchronized block otherwise we will get compile time error saying unexpected type found :int, required :reference.
+
