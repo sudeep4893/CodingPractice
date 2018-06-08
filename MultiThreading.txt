@@ -582,3 +582,6 @@ While a thread executing static synchronized method the remaining threads are no
 3. m5() - normal instance method
 4. static synchronized m1(), static synchronized m2() - They are not allowed to execute when one thread is already in locking state, the other two thread will be in waiting state until and unless lock is released.
 
+
+#Synchronized Block.
+- 
