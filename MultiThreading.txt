@@ -616,3 +616,29 @@ If a thread get class level lock of "Display" class then only it is allowed to e
 
 Lock concept applicable for object type and class types but not for primitives, Hence we can't pass primitive type as argument to synchronized block otherwise we will get compile time error saying unexpected type found :int, required :reference.
 
+int x = 10;
+synchronized(x){
+---
+//If a thread get lock at particular object(b) then only it is allowed to enter into this area.
+Compile time error saying unexpected type found :int, required :reference
+---
+}
+
+---------------------------------------------
+FAQ's
+---------------------------------------------
+1. What is synchronized Keyword, where we can apply?
+
+2. Explain advantage of synchronized keyword?
+
+3. Explain disadvantage of synchronized keyword?
+
+4. What is Race condition?
+- If multiple threads are operating simultaneously on same java object then there may be a chance of data inconsistency problem. This is called Race condition. We can overcome this problem by using synchronized keyword.
+
+5. What is object lock and when it is required?
+
+6. What is class level lock and when it is required?
+
+7.
+
