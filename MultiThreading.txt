@@ -678,3 +678,4 @@ Public void resume()
 Anyway these methods are deprecated and not recommended to use.
 
 
+Thread Life-cycle Diagram must learn.
