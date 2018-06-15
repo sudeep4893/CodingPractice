@@ -664,6 +664,17 @@ Java multi-threading concept is implemented by using the following two models.
 
 How to STOP a thread ?
 - We can stop a thread exception by using stop() method of thread class.
-Public void stop(), if we call stop() then immediately the thread will enter into dead state.
+Public void stop()
+If we call stop() then immediately the thread will enter into dead state.
 Anyway stop() is deprecated and not recommended to use.
+
+
+How to suspend and resume a thread ?
+- We can suspend a thread by using suspend() method of thread class, Then immediately the thread will be entered into suspended state.
+We can resume a suspended thread resume() method of thread class, Then suspended thread can continue its execution.
+Public void suspend()
+Public void resume()
+
+Anyway these methods are deprecated and not recommended to use.
+
 
