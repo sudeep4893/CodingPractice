@@ -640,5 +640,27 @@ FAQ's
 
 6. What is class level lock and when it is required?
 
-7.
+7. What is the difference between class level lock and object level lock?
 
+8. While a thread executing synchronized method on the given object  
+
+
+
+
+Green Thread
+------------
+Java multi-threading concept is implemented by using the following two models.
+1. Green Thread model
+2. Native OS model
+
+1. Green Thread model
+- The thread which is managed completely by JVM without taking underlying OS support is called Green Thread.
+- Very few OS like Sun Solaris provide support for Green Thread model.
+- Anyway Green Thread model is deprecated and not recommended to use.
+
+2. Native OS model
+- The Thread which is managed by the JVM with the help of Underlying OS, is called Native OS model.
+- All windows based OS provide support for Native OS Model.
+
+How to STOP a thread ?
+- 
