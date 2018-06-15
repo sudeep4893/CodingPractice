@@ -663,4 +663,7 @@ Java multi-threading concept is implemented by using the following two models.
 - All windows based OS provide support for Native OS Model.
 
 How to STOP a thread ?
-- 
+- We can stop a thread exception by using stop() method of thread class.
+Public void stop(), if we call stop() then immediately the thread will enter into dead state.
+Anyway stop() is deprecated and not recommended to use.
+
