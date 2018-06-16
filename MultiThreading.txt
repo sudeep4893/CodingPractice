@@ -645,6 +645,10 @@ FAQ's
 8. While a thread executing synchronized method on the given object  
 
 
+Deadlock
+--------
+
+
 
 
 Green Thread
