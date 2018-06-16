@@ -730,8 +730,13 @@ Starvation
 -----------
 
 DeadLock vs Starvation
+- Long waiting of a thread where waiting never ends is called deadlock.
+- Whereas long waiting of a thread were waiting ends at certain point is called Starvation. eg. Low priority thread has to wait until completing all high priority threads. It may be long waiting but ends at certain point, which is nothing but Starvation.
 
 
+Daemon Threads
+--------------
+- The threads which are executing in the background are called Daemon Threads. eg. garbage collector, signal dispatcher, attach listener etc.
 
 
 Green Thread
