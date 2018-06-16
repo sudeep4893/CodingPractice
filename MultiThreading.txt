@@ -775,7 +775,41 @@ public class DaemonExample {
 
 }
 
+- Whenever last non-Daemon thread terminates automatically all Daemon threads will be terminated irrespective of there position.
 
+- If we are commenting "t.setDaemon(true);" both main thread and child threads are non-Daemon. Hence both threads will be executed until there completion.
+- If we are not commenting "t.setDaemon(true);" then main thread is non-Daemon and child thread is Daemon. Hence whenever main thread terminated automatically child thread will be terminated. 
+- In this case output is "End of main Thread, sometimes one time child thread will get executed"
+
+
+package com.psl;
+
+class MyDaemonThread extends Thread{
+	public void run(){
+		for(int i=0 ; i<10 ; i++){
+			System.out.println("Child thread");
+			try {
+				Thread.sleep(2000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+	}
+}
+
+public class DaemonExample {
+
+	public static void main(String[] args) {
+		
+		MyDaemonThread t = new MyDaemonThread();
+		t.setDaemon(true); ------Child thread will be Daemon thread
+		t.start();
+		System.out.println("End of main Thread");
+		
+	}
+
+}
 
 
 Green Thread

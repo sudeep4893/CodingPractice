@@ -31,7 +31,7 @@ public class DaemonExample {
 		*/
 		
 		MyDaemonThread t = new MyDaemonThread();
-		t.setDaemon(true);
+		t.setDaemon(false);
 		t.start();
 		System.out.println("End of main Thread");
 		
