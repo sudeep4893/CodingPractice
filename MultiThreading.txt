@@ -737,6 +737,45 @@ DeadLock vs Starvation
 Daemon Threads
 --------------
 - The threads which are executing in the background are called Daemon Threads. eg. garbage collector, signal dispatcher, attach listener etc.
+- The main objective of Daemon threads is to provide support for non-Daemon threads(main thread). eg if main thread runs with low memory then JVM runs garbage collector to destroy useless objects so that number of bytes of free memory will be improved. with this free memory main thread can continue its execution.
+- Usually Daemon threads having low priority but based on our requirement Daemon threads can run with high priority also.
+- We can check Daemon nature of a thread by using isDaemon() method of thread class.
+public boolean isDaemon()
+- We can change Daemon nature of a thread by using setDaemon() method
+public void setDaemon(boolean b)
+- But changing Daemon nature is possible before starting of a thread only. after starting a thread if we are trying to change Daemon nature then we will get runtime exception saying illegal thread state exception.
+
+Default nature of thread
+------------------------
+- By default main thread is always non-Daemon, and for all remaining threads Daemon nature will be inherited from parent to child. ie, if the parent thread is Daemon then automatically child thread is also Daemon.
+- If the parent thread is non-Daemon then automatically child thread is also non-Daemon.
+Note - It is impossible to change Daemon nature of main thread because it is already started by JVM at beginning.
+
+package com.psl;
+
+class MyDaemonThread extends Thread{
+	
+}
+
+public class DaemonExample {
+
+	public static void main(String[] args) {
+
+		System.out.println(Thread.currentThread().isDaemon()); //false
+		
+		//Thread.currentThread().setDaemon(true);   //getting exception : java.lang.IllegalThreadStateException
+		
+		MyDaemonThread t = new MyDaemonThread();
+		System.out.println(t.isDaemon()); //false
+		
+		t.setDaemon(true);
+		System.out.println(t.isDaemon()); //true
+		
+	}
+
+}
+
+
 
 
 Green Thread

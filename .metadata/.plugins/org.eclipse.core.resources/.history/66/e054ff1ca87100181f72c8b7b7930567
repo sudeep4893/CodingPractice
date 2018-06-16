@@ -1,0 +1,20 @@
+package com.psl;
+
+class MyDaemonThread extends Thread{
+	
+}
+
+public class DaemonExample {
+
+	public static void main(String[] args) {
+
+		System.out.println(Thread.currentThread().isDaemon());
+		
+		//Thread.currentThread().setDaemon(true);   //getting exception : java.lang.IllegalThreadStateException
+		
+		MyDaemonThread t = new MyDaemonThread();
+		System.out.println(t.isDaemon());
+		
+	}
+
+}
