@@ -1,0 +1,30 @@
+package com.psl;
+
+class A{
+	
+	public synchronized void d1(B b){
+		System.out.println("Thread 1 start execution of d1(B b) method ");
+		try {
+			Thread.sleep(6000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	
+}
+
+class B{
+	
+}
+
+public class DeadLock {
+
+	public static void main(String[] args) {
+
+		
+		
+	}
+
+}

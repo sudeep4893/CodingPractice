@@ -1,0 +1,23 @@
+package com.psl;
+
+class A{
+	
+	public synchronized void d1(B b){
+		
+	}
+	
+}
+
+class B{
+	
+}
+
+public class DeadLock {
+
+	public static void main(String[] args) {
+
+		
+		
+	}
+
+}
