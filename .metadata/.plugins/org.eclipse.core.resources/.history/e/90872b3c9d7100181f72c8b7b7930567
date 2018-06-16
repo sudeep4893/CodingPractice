@@ -67,6 +67,6 @@ Thread 1 start execution of d1(B b) method
 Thread 2 start execution of d2(A a) method 
 Thread 2 trying to call A's last 
 Thread 1 trying to call B's last 
-*in deadlock state...
+*
 *
 */
