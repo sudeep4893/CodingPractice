@@ -3,11 +3,19 @@
 <fullyQualifiedTypeName name="com.psl.MyThread"/>
 <fullyQualifiedTypeName name="com.psl.MyThreadJoin1"/>
 <fullyQualifiedTypeName name="com.psl.MyThreadSlide"/>
-<fullyQualifiedTypeName name="java.lang.Thread"/>
 <fullyQualifiedTypeName name="com.psl.MyThreadSleep"/>
 <fullyQualifiedTypeName name="com.psl5418.Client"/>
 <fullyQualifiedTypeName name="java.lang.Exception"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="com.psl.SynchronizedDemo"/>
+<fullyQualifiedTypeName name="com.psl.Display"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="com.psl.MyThreadSyn"/>
+<fullyQualifiedTypeName name="com.psl.QuickSort"/>
+<fullyQualifiedTypeName name="com.psl.A"/>
+<fullyQualifiedTypeName name="com.psl.DeadLock"/>
+<fullyQualifiedTypeName name="com.psl.MyDaemonThread"/>
+<fullyQualifiedTypeName name="java.lang.Thread"/>
 </qualifiedTypeNameHistroy>

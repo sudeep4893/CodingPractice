@@ -644,6 +644,19 @@ FAQ's
 
 8. While a thread executing synchronized method on the given object  
 
+9. What is Synchronized block? How to declare Synchronized to get lock of current object?
+
+10. How to declare Synchronized block to get the class level lock?
+
+11. What is the advantage of Synchronized block over Synchronized method?
+
+12. Is thread can acquire multiple lock simultaneously?
+
+13. What is Synchronized statement?
+
+
+
+
 
 Deadlock
 --------

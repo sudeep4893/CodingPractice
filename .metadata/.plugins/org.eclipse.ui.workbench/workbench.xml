@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="38" version="2.0">
+<workbench progressCount="41" version="2.0">
 <workbenchAdvisor/>
 <window height="728" maximized="true" width="1024" x="125" y="0">
 <fastViewData fastViewLocation="1024"/>
@@ -36,75 +36,25 @@
 <part id="1"/>
 <part id="2"/>
 <part id="3"/>
-<part id="4"/>
-<part id="5"/>
-<part id="6"/>
-<part id="7"/>
-<part id="8"/>
-<part id="9"/>
-<part id="10"/>
-<part id="11"/>
-<part id="12"/>
-<part id="13"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="HelloWorld.java" partName="HelloWorld.java" path="G:/code/CodingPractice/Demo/src/com/psl/HelloWorld.java" title="HelloWorld.java" tooltip="Demo/src/com/psl/HelloWorld.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Demo/src/com/psl/HelloWorld.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="252" selectionTopPixel="0"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SynchronizedDemo.java" partName="SynchronizedDemo.java" path="G:/Git_Java/CodingPractice/MultiThreadingPractice/src/com/psl/SynchronizedDemo.java" title="SynchronizedDemo.java" tooltip="MultiThreadingPractice/src/com/psl/SynchronizedDemo.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MultiThreadingPractice/src/com/psl/SynchronizedDemo.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="529" selectionTopPixel="37"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ThreadDemo.java" partName="ThreadDemo.java" path="G:/Git_Java/CodingPractice/MultiThreadingPractice/src/com/psl/ThreadDemo.java" title="ThreadDemo.java" tooltip="MultiThreadingPractice/src/com/psl/ThreadDemo.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MultiThreadingPractice/src/com/psl/ThreadDemo.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="288" selectionTopPixel="0"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="QuickSort.java" partName="QuickSort.java" path="G:/Git_Java/CodingPractice/Demo/src/com/psl/QuickSort.java" title="QuickSort.java" tooltip="Demo/src/com/psl/QuickSort.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Demo/src/com/psl/QuickSort.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="269" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ThreadDemoRunnable.java" partName="ThreadDemoRunnable.java" path="G:/Git_Java/CodingPractice/MultiThreadingPractice/src/com/psl/ThreadDemoRunnable.java" title="ThreadDemoRunnable.java" tooltip="MultiThreadingPractice/src/com/psl/ThreadDemoRunnable.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MultiThreadingPractice/src/com/psl/ThreadDemoRunnable.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="460" selectionTopPixel="0"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DeadLock.java" partName="DeadLock.java" path="G:/Git_Java/CodingPractice/MultiThreadingPractice/src/com/psl/DeadLock.java" title="DeadLock.java" tooltip="MultiThreadingPractice/src/com/psl/DeadLock.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MultiThreadingPractice/src/com/psl/DeadLock.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="1437" selectionOffset="0" selectionTopPixel="658"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Test.java" partName="Test.java" path="G:/code/CodingPractice/MultiThreadingPractice/src/com/psl/Test.java" title="Test.java" tooltip="MultiThreadingPractice/src/com/psl/Test.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MultiThreadingPractice/src/com/psl/Test.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="300" selectionOffset="20" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ThreadDemoYield.java" partName="ThreadDemoYield.java" path="G:/Git_Java/CodingPractice/MultiThreadingPractice/src/com/psl/ThreadDemoYield.java" title="ThreadDemoYield.java" tooltip="MultiThreadingPractice/src/com/psl/ThreadDemoYield.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MultiThreadingPractice/src/com/psl/ThreadDemoYield.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="412" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ThreadDemoJoin.java" partName="ThreadDemoJoin.java" path="G:/Git_Java/CodingPractice/MultiThreadingPractice/src/com/psl/ThreadDemoJoin.java" title="ThreadDemoJoin.java" tooltip="MultiThreadingPractice/src/com/psl/ThreadDemoJoin.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MultiThreadingPractice/src/com/psl/ThreadDemoJoin.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="284" selectionOffset="20" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ThreadDemoJoin1.java" partName="ThreadDemoJoin1.java" path="G:/Git_Java/CodingPractice/MultiThreadingPractice/src/com/psl/ThreadDemoJoin1.java" title="ThreadDemoJoin1.java" tooltip="MultiThreadingPractice/src/com/psl/ThreadDemoJoin1.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MultiThreadingPractice/src/com/psl/ThreadDemoJoin1.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="322" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SlideRotator.java" partName="SlideRotator.java" path="G:/Git_Java/CodingPractice/MultiThreadingPractice/src/com/psl/SlideRotator.java" title="SlideRotator.java" tooltip="MultiThreadingPractice/src/com/psl/SlideRotator.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MultiThreadingPractice/src/com/psl/SlideRotator.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="539" selectionTopPixel="163"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ThreadDemoSleep.java" partName="ThreadDemoSleep.java" path="G:/Git_Java/CodingPractice/MultiThreadingPractice/src/com/psl/ThreadDemoSleep.java" title="ThreadDemoSleep.java" tooltip="MultiThreadingPractice/src/com/psl/ThreadDemoSleep.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MultiThreadingPractice/src/com/psl/ThreadDemoSleep.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="484" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Client.java" partName="Client.java" path="G:/Git_Java/CodingPractice/Demo/src/com/psl/Client.java" title="Client.java" tooltip="Demo/src/com/psl/Client.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Demo/src/com/psl/Client.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="104"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Client.java" partName="Client.java" path="G:/Git_Java/CodingPractice/Mindspark/src/com/psl5418/Client.java" title="Client.java" tooltip="Mindspark/src/com/psl5418/Client.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Mindspark/src/com/psl5418/Client.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="456" selectionTopPixel="583"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Client.java" partName="Client.java" path="G:/Git_Java/CodingPractice/Mindspark/src/com/psl9418/Client.java" title="Client.java" tooltip="Mindspark/src/com/psl9418/Client.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Mindspark/src/com/psl9418/Client.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="454" selectionTopPixel="177"/>
-</editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Client.java" partName="Client.java" path="G:/Git_Java/CodingPractice/Mindspark/src/com/psl14418/Client.java" title="Client.java" tooltip="Mindspark/src/com/psl14418/Client.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Mindspark/src/com/psl14418/Client.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1217" selectionTopPixel="610"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Client.java" partName="Client.java" path="G:/Git_Java/CodingPractice/Mindspark/src/com/psl18418/Client.java" title="Client.java" tooltip="Mindspark/src/com/psl18418/Client.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Mindspark/src/com/psl18418/Client.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="610" selectionTopPixel="135"/>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DaemonExample.java" partName="DaemonExample.java" path="G:/Git_Java/CodingPractice/MultiThreadingPractice/src/com/psl/DaemonExample.java" title="DaemonExample.java" tooltip="MultiThreadingPractice/src/com/psl/DaemonExample.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MultiThreadingPractice/src/com/psl/DaemonExample.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="878" selectionOffset="0" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -142,6 +92,8 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
+<category IMemento.internal.id="Warnings (1 item)"/>
+<category IMemento.internal.id="Errors"/>
 <category IMemento.internal.id="Warnings"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
@@ -492,31 +444,22 @@
 <view id="org.eclipse.debug.ui.BreakpointView"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <fastViewBars/>
-<layout>
-<mainWindow>
-<info folder="true" part="org.eclipse.debug.internal.ui.NavigatorFolderView">
-<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">
-<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
+<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
 <page content="org.eclipse.wst.server.ui.ServersView" label="Servers"/>
 <page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.PackageExplorer" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.TypeHierarchy" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 <part id="1"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="stickyFolderRight" ratio="0.7496318" ratioLeft="1018" ratioRight="340" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
-<folder appearance="2" expanded="2">
-<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<info folder="true" part="stickyFolderRight" ratio="0.7496318" ratioLeft="1018" ratioRight="340" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.8064516" ratioLeft="500" ratioRight="120" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
-<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
-<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.8064516" ratioLeft="500" ratioRight="120" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.PropertySheet" label="LabelNotFound"/>
@@ -524,30 +467,23 @@
 <page content="org.eclipse.jdt.debug.ui.DisplayView" label="LabelNotFound"/>
 <page content="org.eclipse.search.SearchResultView" label="LabelNotFound"/>
 <page content="org.eclipse.wst.xsl.jaxp.debug.ui.view1" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 <part id="1"/>
 </presentation>
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.6056338" ratioLeft="301" ratioRight="196" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView"/>
-<info folder="true" part="org.eclipse.debug.internal.ui.OutlineFolderView" ratio="0.7496318" ratioLeft="1018" ratioRight="340" relationship="2" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.OutlineFolderView" ratio="0.7496318" ratioLeft="1018" ratioRight="340" relationship="2" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
 <page content="org.eclipse.ant.ui.views.AntView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.debug.internal.ui.ToolsFolderView" ratio="0.5" ratioLeft="679" ratioRight="679" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
-<folder activePageID="org.eclipse.debug.ui.VariableView" appearance="2" expanded="2">
-<page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.ToolsFolderView" ratio="0.5" ratioLeft="679" ratioRight="679" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.debug.ui.VariableView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
 <page content="org.eclipse.debug.ui.BreakpointView" label="Breakpoints"/>
 <page content="org.eclipse.debug.ui.ExpressionView" label="LabelNotFound"/>
 <page content="org.eclipse.debug.ui.RegisterView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 <part id="1"/>
 </presentation>
 </folder>
@@ -560,124 +496,13 @@
 <navigationHistory>
 <editors>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Mindspark/src/com/psl14418/Client.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Demo/src/com/psl/Client.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MultiThreadingPractice/src/com/psl/ThreadDemoJoin.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MultiThreadingPractice/src/com/psl/SynchronizedDemo.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Demo/src/com/psl/QuickSort.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MultiThreadingPractice/src/com/psl/DeadLock.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MultiThreadingPractice/src/com/psl/DaemonExample.java"/>
 </editors>
-<item historyLabel="Client.java" index="0">
-<position info="not_deleted" x="1655" y="0"/>
-</item>
-<item historyLabel="Client.java" index="0">
-<position info="not_deleted" x="1601" y="0"/>
-</item>
-<item historyLabel="Client.java" index="0">
-<position info="not_deleted" x="1696" y="0"/>
-</item>
-<item historyLabel="Client.java" index="0">
-<position info="not_deleted" x="1655" y="0"/>
-</item>
-<item historyLabel="Client.java" index="0">
-<position info="not_deleted" x="1696" y="0"/>
-</item>
-<item historyLabel="Client.java" index="0">
-<position info="not_deleted" x="1655" y="0"/>
-</item>
-<item historyLabel="Client.java" index="0">
-<position info="not_deleted" x="1737" y="0"/>
-</item>
-<item historyLabel="Client.java" index="0">
-<position info="not_deleted" x="1851" y="0"/>
-</item>
-<item historyLabel="Client.java" index="0">
-<position info="not_deleted" x="1879" y="0"/>
-</item>
-<item historyLabel="Client.java" index="0">
-<position info="not_deleted" x="1914" y="0"/>
-</item>
-<item historyLabel="Client.java" index="0">
-<position info="not_deleted" x="1954" y="0"/>
-</item>
-<item historyLabel="Client.java" index="0">
-<position info="not_deleted" x="1914" y="0"/>
-</item>
-<item historyLabel="Client.java" index="0">
-<position info="not_deleted" x="2027" y="0"/>
-</item>
-<item historyLabel="Client.java" index="0">
-<position info="not_deleted" x="2058" y="0"/>
-</item>
-<item historyLabel="Client.java" index="0">
-<position info="not_deleted" x="2150" y="0"/>
-</item>
-<item historyLabel="Client.java" index="0">
-<position info="not_deleted" x="2689" y="0"/>
-</item>
-<item historyLabel="Client.java" index="0">
-<position info="not_deleted" x="2814" y="0"/>
-</item>
-<item historyLabel="Client.java" index="0">
-<position info="not_deleted" x="2027" y="0"/>
-</item>
-<item historyLabel="Client.java" index="0">
-<position info="not_deleted" x="2058" y="0"/>
-</item>
-<item historyLabel="Client.java" index="0">
-<position info="not_deleted" x="2150" y="0"/>
-</item>
-<item historyLabel="Client.java" index="0">
-<position info="not_deleted" x="2689" y="0"/>
-</item>
-<item historyLabel="Client.java" index="0">
-<position info="not_deleted" x="2814" y="0"/>
-</item>
-<item historyLabel="Client.java" index="0">
-<position info="not_deleted" x="2027" y="0"/>
-</item>
-<item historyLabel="Client.java" index="0">
-<position info="not_deleted" x="2058" y="0"/>
-</item>
-<item historyLabel="Client.java" index="0">
-<position info="not_deleted" x="2150" y="0"/>
-</item>
-<item historyLabel="Client.java" index="0">
-<position info="not_deleted" x="2689" y="0"/>
-</item>
-<item historyLabel="Client.java" index="0">
-<position info="not_deleted" x="2814" y="0"/>
-</item>
-<item historyLabel="Client.java" index="0">
-<position info="not_deleted" x="2027" y="0"/>
-</item>
-<item historyLabel="Client.java" index="0">
-<position info="not_deleted" x="2058" y="0"/>
-</item>
-<item historyLabel="Client.java" index="0">
-<position info="not_deleted" x="2150" y="0"/>
-</item>
-<item historyLabel="Client.java" index="0">
-<position info="not_deleted" x="2689" y="0"/>
-</item>
-<item historyLabel="Client.java" index="0">
-<position info="not_deleted" x="2814" y="0"/>
-</item>
-<item historyLabel="Client.java" index="0">
-<position info="not_deleted" x="2027" y="0"/>
-</item>
-<item historyLabel="Client.java" index="0">
-<position info="not_deleted" x="2150" y="0"/>
-</item>
-<item historyLabel="Client.java" index="0">
-<position info="not_deleted" x="2689" y="0"/>
-</item>
-<item historyLabel="Client.java" index="0">
-<position info="not_deleted" x="2814" y="0"/>
-</item>
-<item historyLabel="Client.java" index="0">
-<position info="not_deleted" x="2027" y="0"/>
-</item>
-<item historyLabel="Client.java" index="0">
-<position info="not_deleted" x="1396" y="0"/>
-</item>
-<item historyLabel="Client.java" index="0">
-<position info="not_deleted" x="2883" y="0"/>
-</item>
 <item historyLabel="Client.java" index="0">
 <position info="not_deleted" x="2947" y="0"/>
 </item>
@@ -705,8 +530,128 @@
 <item historyLabel="Client.java" index="0">
 <position info="not_deleted" x="2989" y="0"/>
 </item>
-<item active="true" historyLabel="Client.java" index="0">
-<position info="not_deleted" x="3119" y="0"/>
+<item historyLabel="Client.java" index="0">
+<position info="not_deleted" x="1217" y="0"/>
+</item>
+<item historyLabel="Client.java" index="1">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="ThreadDemoJoin.java" index="2">
+<position info="not_deleted" x="20" y="284"/>
+</item>
+<item historyLabel="Client.java" index="1">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Client.java" index="0">
+<position info="not_deleted" x="1217" y="0"/>
+</item>
+<item historyLabel="SynchronizedDemo.java" index="3">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="SynchronizedDemo.java" index="3">
+<position info="not_deleted" x="489" y="0"/>
+</item>
+<item historyLabel="SynchronizedDemo.java" index="3">
+<position info="not_deleted" x="1249" y="0"/>
+</item>
+<item historyLabel="SynchronizedDemo.java" index="3">
+<position info="not_deleted" x="488" y="0"/>
+</item>
+<item historyLabel="SynchronizedDemo.java" index="3">
+<position info="not_deleted" x="680" y="0"/>
+</item>
+<item historyLabel="SynchronizedDemo.java" index="3">
+<position info="not_deleted" x="190" y="18"/>
+</item>
+<item historyLabel="QuickSort.java" index="4">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="QuickSort.java" index="4">
+<position info="not_deleted" x="492" y="0"/>
+</item>
+<item historyLabel="QuickSort.java" index="4">
+<position info="not_deleted" x="390" y="0"/>
+</item>
+<item historyLabel="QuickSort.java" index="4">
+<position info="not_deleted" x="492" y="0"/>
+</item>
+<item historyLabel="QuickSort.java" index="4">
+<position info="not_deleted" x="74" y="0"/>
+</item>
+<item historyLabel="QuickSort.java" index="4">
+<position info="not_deleted" x="168" y="0"/>
+</item>
+<item historyLabel="QuickSort.java" index="4">
+<position info="not_deleted" x="482" y="0"/>
+</item>
+<item historyLabel="QuickSort.java" index="4">
+<position info="not_deleted" x="485" y="0"/>
+</item>
+<item historyLabel="QuickSort.java" index="4">
+<position info="not_deleted" x="490" y="0"/>
+</item>
+<item historyLabel="QuickSort.java" index="4">
+<position info="not_deleted" x="160" y="0"/>
+</item>
+<item historyLabel="QuickSort.java" index="4">
+<position info="not_deleted" x="269" y="0"/>
+</item>
+<item historyLabel="SynchronizedDemo.java" index="3">
+<position info="not_deleted" x="529" y="0"/>
+</item>
+<item historyLabel="DeadLock.java" index="5">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="SynchronizedDemo.java" index="3">
+<position info="not_deleted" x="529" y="0"/>
+</item>
+<item historyLabel="QuickSort.java" index="4">
+<position info="not_deleted" x="269" y="0"/>
+</item>
+<item historyLabel="DeadLock.java" index="5">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="DeadLock.java" index="5">
+<position info="not_deleted" x="62" y="1"/>
+</item>
+<item historyLabel="DeadLock.java" index="5">
+<position info="not_deleted" x="447" y="0"/>
+</item>
+<item historyLabel="DeadLock.java" index="5">
+<position info="not_deleted" x="350" y="0"/>
+</item>
+<item historyLabel="DeadLock.java" index="5">
+<position info="not_deleted" x="1128" y="0"/>
+</item>
+<item historyLabel="DeadLock.java" index="5">
+<position info="not_deleted" x="1011" y="0"/>
+</item>
+<item historyLabel="DeadLock.java" index="5">
+<position info="not_deleted" x="0" y="1437"/>
+</item>
+<item historyLabel="DaemonExample.java" index="6">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="DaemonExample.java" index="6">
+<position info="not_deleted" x="452" y="0"/>
+</item>
+<item historyLabel="DaemonExample.java" index="6">
+<position info="not_deleted" x="869" y="0"/>
+</item>
+<item historyLabel="DaemonExample.java" index="6">
+<position info="not_deleted" x="646" y="0"/>
+</item>
+<item historyLabel="DaemonExample.java" index="6">
+<position info="not_deleted" x="869" y="0"/>
+</item>
+<item historyLabel="DaemonExample.java" index="6">
+<position info="not_deleted" x="298" y="0"/>
+</item>
+<item historyLabel="DaemonExample.java" index="6">
+<position info="not_deleted" x="293" y="0"/>
+</item>
+<item active="true" historyLabel="DaemonExample.java" index="6">
+<position info="not_deleted" x="806" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -714,6 +659,14 @@
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
+<trimArea IMemento.internal.id="16384">
+<trimItem IMemento.internal.id="left"/>
+</trimArea>
+<trimArea IMemento.internal.id="131072">
+<trimItem IMemento.internal.id="bottom"/>
+<trimItem IMemento.internal.id="right"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@18aab26"/>
+</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 <trimItem IMemento.internal.id="org.eclipse.mylyn.tasks.ui.trim.container"/>
@@ -726,6 +679,18 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DaemonExample.java" tooltip="MultiThreadingPractice/src/com/psl/DaemonExample.java">
+<persistable path="/MultiThreadingPractice/src/com/psl/DaemonExample.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DeadLock.java" tooltip="MultiThreadingPractice/src/com/psl/DeadLock.java">
+<persistable path="/MultiThreadingPractice/src/com/psl/DeadLock.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="QuickSort.java" tooltip="Demo/src/com/psl/QuickSort.java">
+<persistable path="/Demo/src/com/psl/QuickSort.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SynchronizedDemo.java" tooltip="MultiThreadingPractice/src/com/psl/SynchronizedDemo.java">
+<persistable path="/MultiThreadingPractice/src/com/psl/SynchronizedDemo.java"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Client.java" tooltip="Mindspark/src/com/psl18418/Client.java">
 <persistable path="/Mindspark/src/com/psl18418/Client.java"/>
 </file>
@@ -758,12 +723,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Test.java" tooltip="MultiThreadingPractice/src/com/psl/Test.java">
 <persistable path="/MultiThreadingPractice/src/com/psl/Test.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ThreadDemoRunnable.java" tooltip="MultiThreadingPractice/src/com/psl/ThreadDemoRunnable.java">
-<persistable path="/MultiThreadingPractice/src/com/psl/ThreadDemoRunnable.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MyThread.java" tooltip="MultiThreadingPractice/src/com/psl/MyThread.java">
-<persistable path="/MultiThreadingPractice/src/com/psl/MyThread.java"/>
 </file>
 </mruList>
 </workbench>
