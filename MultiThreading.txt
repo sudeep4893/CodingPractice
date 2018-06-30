@@ -658,8 +658,9 @@ FAQ's
 
 Inter Thread Communication
 --------------------------
-
-
+- Two Threads can communicate with each other by using wait(), notify() and notifyAll().
+- The Thread which is expecting updation is responsible to call wait(), then immediately the thread will enter into waiting state.
+- 
 
 
 Deadlock
