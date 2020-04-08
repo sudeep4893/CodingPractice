@@ -57,13 +57,13 @@ TAKEAWAYs : RMS, GNU, GPL, free software vs open source software
 2. Subversion
 3. Helix
 4. Mercurial
-5. IBM Rational ClearCase ***
+5. XYZ Rational ClearCase ***
 6. AccuRev
 7. Surround SCM
 8. CVS
 9. Kiln
 10. Bazaar
-11. IBM Jazz Rational Synergy ***
+11. XYZ Jazz Rational Synergy ***
 12. Fossil
 13. Monotone
 14. Plastic SCM
@@ -203,14 +203,14 @@ To sum of the basic commit workflow :
 
 #5.14 Adding ssh keys
 Use "Git Bash" or another method to generate an SSH public/private key pair. 
-1.	Open GitBash / terminal and type the command ssh-keygen -t rsa -C "<YOUR IBM EMAIL>" and replace the contents within angle brackets with your IBM email. e.g. ssh-keygen -t rsa -C "abc@gmail.com"
+1.	Open GitBash / terminal and type the command ssh-keygen -t rsa -C "<YOUR XYZ EMAIL>" and replace the contents within angle brackets with your XYZ email. e.g. ssh-keygen -t rsa -C "abc@gmail.com"
 	1.	It will ask for a filename to save the keys under. - select default 
 	2.	It then asks for a passphrase. Leave this empty or you will run into problems. 
 	3.	If it gives you a key fingerprint, success! Your keys should be in the current working directory from where you ran the ssh-keygen command.
 	
 The file with a .pub extension is your public key. The file without an extension is your private key. 
 
-2.	Log in to git@github.ibm.com
+2.	Log in to git@github.xyz.com
 	1.	Navigate to [settings] (upper right icon) then go to [Keys]. 
 	2.	Then click on the Add SSH Key button. 
 	
@@ -221,13 +221,13 @@ The file with a .pub extension is your public key. The file without an extension
 4.	Confirm the key works correctly. 
 	1.	Go back to a console capable of running git. 
 	2.	Run the following command
-	ssh -i <filename> git@github.ibm.com
+	ssh -i <filename> git@github.xyz.com
 		1.	The filename of your private key is the same as your public key without the .pub file extension. 
 		2.	Also, you may need to make sure you run this command in the same directory that contains the generated pair of keys. 
 		3.	To debug the connection, try adding a -v argument to the SSH command. -vv and -vvv increase verbosity of debug statements. 
 	3.	If your SSH connection is set up, the command will output 
 	Welcome to GitLab, <SUBJECT NAME HERE> 
-	Connection to git@github.ibm.com closed.
+	Connection to git@github.xyz.com closed.
 	
 5.	Simplify SSH for Windows (this step is optional) 
 	1.	So in the last command we used -i to tell SSH to use a specific key. To avoid this in the future, we will tell SSH what key corresponds to what server. 
@@ -236,12 +236,12 @@ The file with a .pub extension is your public key. The file without an extension
 	4.	Place the public and private keys generated earlier into this folder, unless they were created there. 
 	5.	Create a new file called 'config' with no file extension. Open it with notepad or a similar text editor. 
 	6.	Put the following text in .ssh/config 
-	Host git@github.ibm.com 
-      HostName git@github.ibm.com 
+	Host git@github.xyz.com 
+      HostName git@github.xyz.com 
       IdentityFile C:/users/<WINDOWS USERNAME>/.ssh/<FILENAME OF PRIVATE KEY>
 	Replacing the contents in angle brackets with the corresponding names. 
 6.	Test it again by running 
-ssh git@github.ibm.com 
+ssh git@github.xyz.com 
 You should get the same results as earlier.
 
 #6 Branching
