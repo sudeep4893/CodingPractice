@@ -203,7 +203,7 @@ To sum of the basic commit workflow :
 
 #5.14 Adding ssh keys
 Use "Git Bash" or another method to generate an SSH public/private key pair. 
-1.	Open GitBash / terminal and type the command ssh-keygen -t rsa -C "<YOUR IBM EMAIL>" and replace the contents within angle brackets with your IBM email. e.g. ssh-keygen -t rsa -C "pkelkar@us.ibm.com"
+1.	Open GitBash / terminal and type the command ssh-keygen -t rsa -C "<YOUR IBM EMAIL>" and replace the contents within angle brackets with your IBM email. e.g. ssh-keygen -t rsa -C "abc@gmail.com"
 	1.	It will ask for a filename to save the keys under. - select default 
 	2.	It then asks for a passphrase. Leave this empty or you will run into problems. 
 	3.	If it gives you a key fingerprint, success! Your keys should be in the current working directory from where you ran the ssh-keygen command.
